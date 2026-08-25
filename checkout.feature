@@ -1,6 +1,7 @@
 # language: pt
 
 
+
 Funcionalidade: Tela de cadastro - Checkout
   Como cliente da EBAC-SHOP
   Quero fazer concluir meu cadastro
