@@ -13,20 +13,20 @@ Funcionalidade: Configurar produto
 
   Cenário: Impedir configuração sem cor
     Dado que o cliente esteja na página de configuração do produto
-    E tenha selecionado um tamanho e uma quantidade
-    Quando tentar inserir o produto no carrinho sem selecionar a cor
+    Quando selecionar um tamanho e uma quantidade
+    E tentar inserir o produto no carrinho sem selecionar a cor
     Então o sistema deve impedir a inclusão do produto no carrinho
 
   Cenário: Impedir configuração sem tamanho
     Dado que o cliente esteja na página de configuração do produto
-    E tenha selecionado uma cor e uma quantidade
-    Quando tentar inserir o produto no carrinho sem selecionar o tamanho
+    Quando selecionar uma cor e uma quantidade
+    E tentar inserir o produto no carrinho sem selecionar o tamanho
     Então o sistema deve impedir a inclusão do produto no carrinho
 
   Cenário: Impedir configuração sem quantidade
     Dado que o cliente esteja na página de configuração do produto
-    E tenha selecionado uma cor e um tamanho
-    Quando tentar inserir o produto no carrinho sem selecionar a quantidade
+    Quando selecionar uma cor e um tamanho
+    E tentar inserir o produto no carrinho sem selecionar a quantidade
     Então o sistema deve impedir a inclusão do produto no carrinho
 
   Esquema do Cenário: Limitar quantidade de produtos por venda
@@ -41,6 +41,7 @@ Funcionalidade: Configurar produto
       | 11         | impedir a configuração acima do limite de 10 |
 
   Cenário: Limpar configuração do produto
-    Dado que o cliente tenha configurado cor, tamanho e quantidade
-    Quando clicar no botão "limpar"
+    Dado que o cliente esteja na página de configuração do produto
+    Quando selecionar cor, tamanho e quantidade
+    E clicar no botão "limpar"
     Então o produto deve voltar ao estado original

@@ -7,7 +7,6 @@ Funcionalidade: Login na plataforma
 
   Cenário: Realizar login com dados válidos
     Dado que o cliente esteja na tela de login
-    E possua dados de autenticação válidos
     Quando inserir usuário e senha válidos
     Então deve ser direcionado para a tela de checkout
 
